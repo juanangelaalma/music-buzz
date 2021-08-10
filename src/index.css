@@ -89,10 +89,12 @@ a {
   padding: 10px 14px;
   font-size: 0.9em;
   border: none;
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-family: 'Roboto';
   font-weight: 400;
+  cursor: pointer;
 }
+
 
 nav {
   padding: 20px 10%;
@@ -323,5 +325,37 @@ header:before {
   .jumbotron button {
     padding: 20px 28px;
     font-size: 3vh;
+  }
+
+  .about {
+    flex-wrap: nowrap;
+  }
+
+  .about img {
+    flex: 1;
+    width: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about .content {
+    flex: 1;
+    padding: 10% 10% 10% 7%;
+    box-sizing: border-box;
+  }
+
+  .about .content h1 {
+    font-size: 3em;
+    margin-bottom: 40px;
+  }
+
+  .about .content p {
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 30px;
+  }
+
+  .about .content button.btn {
+    padding: 15px 30px;
   }
 }

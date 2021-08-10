@@ -12,7 +12,7 @@ const Header = () => {
           Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur non
           nulla sit amet nisl tempus convallis quis ac lectus
         </p>
-        <button className="btn">READ MORE</button>
+        <button className="btn" type="button">READ MORE</button>
       </div>
     </header>
   );
