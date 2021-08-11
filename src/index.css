@@ -359,6 +359,8 @@ header:before {
   font-size: 1em;
 }
 /* End Of CHOOSE */
+
+/* SERVICES */
 .services {
   background-color: #fff;
   display: flex;
@@ -403,9 +405,29 @@ header:before {
   width: 100%;
   transform: rotate(90deg);
 }
-/* SERVICES */
-
 /* End Of SERVICES */
+
+/* WTHREE */
+.slide-wthree{
+  padding: 10% 0;
+}
+.slide-wthree .cover {
+  background-color: #5CB977;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+  justify-content: center;
+}
+.slide-wthree img {
+  width: 100%;
+}
+.slide-wthree h1 {
+  color: #fff;
+  font-size: 2em;
+  font-family: 'Ubuntu';
+  font-weight: 700;
+}
+/* End Of WTHREE */
 
 @media (min-width: 641px) {
   .brand {
@@ -534,5 +556,25 @@ header:before {
   }
   .services .right-side img {
     transform: rotate(0deg);
+  }
+
+  .slide-wthree .cover {
+    display: block;
+    padding: 0;
+    height: 300px;
+    position: relative;
+  }
+  .slide-wthree img {
+    height: 200%;
+    width: auto;
+    position: absolute;
+    top: -130px;
+    left: 10%;
+  }
+  .slide-wthree h1 {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    font-size: 3em;
   }
 }
