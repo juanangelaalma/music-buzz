@@ -70,6 +70,7 @@ a {
   box-sizing: border-box;
 }
 
+
 .container {
   display: flex;
   padding: 0 10%;
@@ -93,6 +94,9 @@ a {
   font-family: 'Roboto';
   font-weight: 400;
   cursor: pointer;
+}
+.btn:hover {
+  background-image: linear-gradient(#000, #000);
 }
 
 
@@ -211,7 +215,7 @@ header:before {
   width: 100%;
   box-sizing: border-box;
 }
-.jumbotron h1, p, button {
+.jumbotron h1, .jumbotron p, .jumbotron button {
   float: right;
   color: #fff;
   position: relative;
@@ -219,6 +223,18 @@ header:before {
   text-align: right;
   font-family: 'Ubuntu';
   font-weight: 700;
+  animation: head 1s;
+}
+
+@keyframes head {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .jumbotron h1 {
@@ -276,6 +292,120 @@ header:before {
   float: left;
   padding: 5px 20px;
 }
+
+/* CHOOSE */
+.choose {
+  display: flex;
+  flex-wrap: wrap;
+}
+.choose-head {
+  flex: 100%;
+  padding: 15% 10%;
+}
+.choose-body {
+  flex: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.choose-body .card img {
+  width: 10%;
+}
+.choose-head h1 {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-size: 1.7em;
+  margin-bottom: 20px;
+}
+.choose-body .card {
+  flex: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.choose-body .card-header {
+  flex: 100%;
+  padding: 10%;
+  background-color: #5CB977;
+}
+.choose-body .card-body {
+  flex: 100%;
+}
+.choose-body .card-header .icon {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 4px 4px 9px rgb(37, 37, 37, 0.7);
+}
+.choose-body .card-header .icon img {
+  width: 75%;
+  margin: auto;
+}
+.choose-body .card-header h1 {
+  color: #fff;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 1.5em;
+}
+.choose-body .card-body {
+  padding: 5% 10%;
+  line-height: 30px;
+  color: #373737;
+}
+.choose-body .card-body p {
+  font-family: 'Roboto';
+  font-size: 1em;
+}
+/* End Of CHOOSE */
+.services {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+.services .left-side {
+  flex: 100%;
+  background-color: #6886FD;
+  padding: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+}
+.services .left-side .col {
+  flex: 100%;
+  margin-bottom: 10%;
+}
+.services .left-side h1 {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: 10%;
+}
+.services .left-side h2 {
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-bottom: 3%;
+}
+.services .left-side p {
+  line-height: 30px;
+  font-family: 'Roboto';
+  font-size: 1em;
+  font-weight: 300;
+}
+.services .right-side {
+  flex: 100%;
+  display: flex;
+  align-items: center;
+}
+.services .right-side img {
+  width: 100%;
+  transform: rotate(90deg);
+}
+/* SERVICES */
+
+/* End Of SERVICES */
 
 @media (min-width: 641px) {
   .brand {
@@ -356,6 +486,53 @@ header:before {
   }
 
   .about .content button.btn {
-    padding: 15px 30px;
+    padding: 20px 40px;
+    font-size: 3vh;
+  }
+
+  .choose {
+    flex-wrap: nowrap;
+    padding: 7% 0;
+  }
+  .choose-head {
+    flex: 1;
+    padding: 90px 0 90px 10%;
+  }
+  .choose-head h1 {
+    font-size: 3em;
+  }
+  .choose-body {
+    flex: 3;
+    flex-wrap: nowrap;
+  }
+  .choose-body .card-header {
+    padding: 20%;
+  }
+  .choose-body .card-header .icon {
+    padding: 20px;
+  }
+  .choose-head button {
+    width: 80%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 3vh;
+  }
+
+  .services .left-side {
+    flex: 2;
+    padding: 5% 10%;
+  }
+  .services .left-side h1 {
+    flex: 100%;
+    font-size: 3em;
+  }
+  .services .left-side .col {
+    flex: 50%;
+  }
+  .services .right-side {
+    flex: 1.4;
+  }
+  .services .right-side img {
+    transform: rotate(0deg);
   }
 }

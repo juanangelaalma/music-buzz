@@ -15,7 +15,7 @@ const About = () => {
           nec sem a, ornare auctor mi. Sed mi tortor, commodo a felis in,
           fringilla tincidunt nulla. Vestibulum volutpat non eros uttate.
         </p>
-        <button className="btn btn-about">Know more</button>
+        <button className="btn btn-about">KNOW MORE</button>
       </div>
     </section>
   );
